@@ -14,5 +14,6 @@ Answer the following Questions first:
 - []: Once the component has been found out, we need to think of an actual implementation of the idea in code and integration with first one @tbd
 
 - [x]: Clone the legged_gym(Parallel Training) codebases as submodules.
-    1. https://github.com/leggedrobotics/legged_gym.git  has been added #TODO - Can we use the one that depends on IsaacLab or Mujoco instead because IsaacGym is no longer supported? Will switching break things mentioned in the paper?
+    1. https://github.com/leggedrobotics/legged_gym.git  has been added
+    2. #TODO - Can we use the one that depends on IsaacLab or Mujoco instead because IsaacGym is no longer supported? Will switching break things mentioned in the paper? @mrigaank
 
