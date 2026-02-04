@@ -3,16 +3,25 @@ Implementation of some core elements of "Learning robust perceptive locomotion f
 
 <img width=1000 src='image/figure.png'>
 
-## Description
+## Description / Implemented Components
 This repository includes implementation of two elements.
 1. Student policy network
 2. Heightmap noise generator
 
 Student policy network is composed of **belief encoder** and **belief decoder** to appropriately fuse both proprioceptive and exteroceptive sensor data. It is implemented in *Python*. 
-Privilege information decoder, included in the paper, is excluded because they were not that critical in our experiement.
+Privilege information decoder, included in the paper, is excluded because they were not that critical in our experiment.
 
 Heightmap noise generator is composed of **three noise models** to handle errors available in real-world use cases due to depth camera noise, state estimation error/drift etc. 
 It is implemented in *C++* because the [Raisim](https://raisim.com/) simulator that we are actively using implements environments in *C++* for fast simulation.
+
+The current implementation is partially runnable in simulation but not end-to-end reproducible and cannot be deployed for sim-to-real transfer.
+
+## Additions needed
+- Teacher policy network: A teacher policy trained using PPO using priviledged information:
+  - Ground-truth terrain height map
+  - Full robot state
+
+- Sim-to-Real deployment interface
 
 ## Dependencies
 - numpy
@@ -35,7 +44,7 @@ make
 # After build is finished
 ./noise_example
 ```
-## Components from [Wild ANYmal](https://leggedrobotics.github.io/rl-perceptiveloco/assets/pdf/wild_anymal.pdf) that need to be incorporated
+## Components from [Wild ANYmal](https://leggedrobotics.github.io/rl-perceptiveloco/assets/pdf/wild_anymal.pdf) that need to be incorporated into our deployment
 - *Belief Encoder Network*: A recurrent neural network (GRU /RNN) that encodes proprioceptive and exteroceptive observations into a latent belief state i.e. the terrain representation. This belief state allows the policy to reason over partial, noisy and temporally accumulated perception data which as a result improves robustness to sensor noise and occlusions.
   
 - *Teacher-Student Imitation*: The teacher policy is trained via Reinforcement Learning ( RL) with full access to privileged information in the form of the ground-truth state of the environment. This privileged training enables the teacher policy to discover the optimal behavior given perfect knowledge of the terrain. Then, a student policy is trained that only has access to information that is available in the field on the physical robot. The student policy is built around the belief state encoder and trained via imitation learning. The student policy learns to predict the teacher’s optimal action given only partial and noisy observations of the environment.
