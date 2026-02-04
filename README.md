@@ -6,6 +6,7 @@ Answer the following Questions first:
 - []: What is it that the first work is lacking - https://arxiv.org/abs/2109.11978  -->@chirag
     1. The Sim2Real deployment is not very robust. Also this method(their exact codebase) does not work for a GO2 for some reason. --> "We do not apply any additional filtering or constraint satisfaction checks." As stated this paper dosent employ any kind of sendor fusion or correction. For better sim to real deployment we can look into other methods where they use GRUs (Belief encoder) to fuse  proprioceptive and exteroceptive data. They also mention starting to train the student netwoek with no noise and gradually increase noise.
            - https://ieeexplore.ieee.org/document/8392399: updating the map using EKFs, issues: registers overhands as tall objects.
+           - we can look into forks of legged gym which use for GO1 : https://github.com/Improbable-AI/walk-these-ways, https://github.com/atFarm-robotics/go1-legged-gym-fork, https://github.com/Bireflection/ai3603_legged_gym/tree/master
     2. Instead of using legged_gym, can we switch to unitree_rl_gym or even better unitree_rl_lab? -> Repo[https://github.com/unitreerobotics/unitree_rl_lab]
     3. If we do use unitree_rl_lab, what would be the VRAM and compute requirements for training. Or are there checkpoints available?
 
