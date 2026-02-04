@@ -9,7 +9,7 @@ Answer the following Questions first:
     3. If we do use unitree_rl_lab, what would be the VRAM and compute requirements for training. Or are there checkpoints available?
 - []: Is it possible to use the [quadrupeds_locomotion](https://github.com/Argo-Robot/quadrupeds_locomotion) checkpoint and deploy it in [untiree_rl_lab](https://github.com/unitreerobotics/unitree_rl_lab) --> @om and @chirag [05-02-2026] 
     1. Can we use unitree_rl_lab with mujoco. -> @Om [5-02-2026]
-    2. Directly deploy to IRL possible? -> @Om and @Chirag [07-02-2026]
+    2. Directly deploy to IRL possible? -> @Om and @Chirag [07-02-2026] - (Not possible directly for Quadrupeds_locomotion(looks like it))
     3. If there are issues such as network key mismatch:[post the above results]
           1. Try to modify MLP config of unitree_rl_lab.
           2. Copy the configs from unitree_rl_lab and train a similar checkpoint in genesis(Quadrupeds_locomtion) - decided upon(to change?)
