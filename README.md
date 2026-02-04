@@ -10,13 +10,13 @@ Answer the following Questions first:
 
      
 - []: What component from the robust deployment paper needs to be incorporated - https://leggedrobotics.github.io/rl-perceptiveloco/  --> @asavari
-     a. You will have to talk to Chirag here to see what is the contribution of the above paper(Parallelized Training). Basically the idea is that the first paper
+     1. You will have to talk to Chirag here to see what is the contribution of the above paper(Parallelized Training). Basically the idea is that the first paper
         lacks sim2real deployment, the second one is good in that aspect - so the current implementation given, is that what we need? n
   
 - []: This repo -> https://github.com/awesomericky/quadruped-robot-belief-encoder contains partial implementation of the above paper, analysis needed. @asavari
-     a. Understand what components have been implemented from the paper - and are they enough? As in - in some aspect of the paper missing in the implementations.
-     b. Add the implementation to the repo(not as a submodule because then we can't see what changes you make) - Add a separate Readme related to the repo explaining the above points.
-     c. Is the current implementation of the paper runn-able? How does the setup look like? - Fork the existing implementation and try so that we can track the changes you make.
+     1. Understand what components have been implemented from the paper - and are they enough? As in - in some aspect of the paper missing in the implementations.
+     2. Add the implementation to the repo(not as a submodule because then we can't see what changes you make) - Add a separate Readme related to the repo explaining the above points.
+     3. Is the current implementation of the paper runn-able? How does the setup look like? - Fork the existing implementation and try so that we can track the changes you make.
   
 - []: Once the component has been found out, we need to think of an actual implementation of the idea in code and integration with first one @tbd
 
