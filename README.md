@@ -11,9 +11,8 @@ Answer the following Questions first:
     1. Can we use unitree_rl_lab with mujoco. -> @Om [5-02-2026] --> Possible
     2. Directly deploy to IRL possible? -> @Om and @Chirag [07-02-2026] - (Not possible directly for Quadrupeds_locomotion)
     3. If there are issues such as network key mismatch:[post the above results] -->This is transferrable since both the repositories are using the same learning library.
-          1. Try to modify MLP config of unitree_rl_lab.
-          2. Copy the configs from unitree_rl_lab and train a similar checkpoint in genesis(Quadrupeds_locomtion) - decided upon(to change?)
-            
+          1. WHat changes to make to the Quadrupeds Locomotion configs?
+          2. Copy the configs from unitree_rl_lab and train a similar checkpoint in genesis(Quadrupeds_locomtion) - decided upon(to change?) - TBD @OM
      
 - []: What component from the robust deployment paper needs to be incorporated - https://leggedrobotics.github.io/rl-perceptiveloco/  --> @asavari
      1. You will have to talk to Chirag here to see what is the contribution of the above paper(Parallelized Training). Basically the idea is that the first paper
