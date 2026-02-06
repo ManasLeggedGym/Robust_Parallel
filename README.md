@@ -1,7 +1,7 @@
 # Robust_Parallel
 A repo aimed at inducing a happy marriage between massively Parallelized RL training and robust sim2real deployment 
 
-## Immediate TODOs: @Om
+## Immediate TODOs: @Om @Mrigaank
 - []: _Have these two been merged before? i.e. has someone done parallelized training and then use a belief encoder model for RL?_
 - []: _Check if the performance boost would be significant?_
 
