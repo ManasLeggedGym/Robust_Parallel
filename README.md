@@ -12,10 +12,10 @@ A repo aimed at inducing a happy marriage between massively Parallelized RL trai
   
 ## TODO:
 Answer the following Questions first:
-- []: What is it that the first work is lacking - https://arxiv.org/abs/2109.11978  -->@chirag
-    1. The Sim2Real deployment is not very robust. Also this method(their exact codebase) does not work for a GO2 for some reason.
-    2. Instead of using legged_gym, can we switch to unitree_rl_gym or even better unitree_rl_lab? -> Repo[https://github.com/unitreerobotics/unitree_rl_lab]
-    3. If we do use unitree_rl_lab, what would be the VRAM and compute requirements for training. Or are there checkpoints available?
+- [x]: What is it that the first work is lacking - https://arxiv.org/abs/2109.11978  -->@chirag 
+    1. The Sim2Real deployment is not very robust. Also this method(their exact codebase) does not work for a GO2 for some reason.--> Lacks any type of sim to real deployment techniques (direct deploy).
+    2. Instead of using legged_gym, can we switch to unitree_rl_gym or even better unitree_rl_lab? -> Repo[https://github.com/unitreerobotics/unitree_rl_lab] --> Unti tree RL gym is doable (ram and gpu constraints are met), RL Lab is not (requires 32GB ram and 16GB Vram). But unitree rl lab allows direct deployment to bot.
+    3. If we do use unitree_rl_lab, what would be the VRAM and compute requirements for training. Or are there checkpoints available? --> No checkpoints available, not feasiable to use RL Lab for training.
 - []: Is it possible to use the [quadrupeds_locomotion](https://github.com/Argo-Robot/quadrupeds_locomotion) checkpoint and deploy it in [untiree_rl_lab](https://github.com/unitreerobotics/unitree_rl_lab) --> @om and @chirag [05-02-2026] 
     1. _Can we use unitree_rl_lab with mujoco. -> @Om [5-02-2026] --> Possible_
        - _Setup on Summer --> @Om_
