@@ -1,6 +1,15 @@
 # Robust_Parallel
 A repo aimed at inducing a happy marriage between massively Parallelized RL training and robust sim2real deployment 
 
+## Immediate TODOs: @Om
+- []: _Have these two been merged before? i.e. has someone done parallelized training and then use a belief encoder model for RL?_
+- []: _Check if the performance boost would be significant?_
+
+## Sim2Real deployment: @Asavari,@Chirag
+- []: _We have the trained checkpoint from the Quadrupeds locomotion repo, can we deploy?_
+- []: _A few things to keep in mind before deploying:_
+     _a. Make sure there are proper constraints on the values the policy can output -> Clip the values action values to be within a range._
+  
 ## TODO:
 Answer the following Questions first:
 - []: What is it that the first work is lacking - https://arxiv.org/abs/2109.11978  -->@chirag
@@ -8,12 +17,13 @@ Answer the following Questions first:
     2. Instead of using legged_gym, can we switch to unitree_rl_gym or even better unitree_rl_lab? -> Repo[https://github.com/unitreerobotics/unitree_rl_lab]
     3. If we do use unitree_rl_lab, what would be the VRAM and compute requirements for training. Or are there checkpoints available?
 - []: Is it possible to use the [quadrupeds_locomotion](https://github.com/Argo-Robot/quadrupeds_locomotion) checkpoint and deploy it in [untiree_rl_lab](https://github.com/unitreerobotics/unitree_rl_lab) --> @om and @chirag [05-02-2026] 
-    1. Can we use unitree_rl_lab with mujoco. -> @Om [5-02-2026] --> Possible
-    2. Directly deploy to IRL possible? -> @Om and @Chirag [07-02-2026] - (Not possible directly for Quadrupeds_locomotion)
-    3. If there are issues such as network key mismatch:[post the above results] -->This is transferrable since both the repositories are using the same learning library.
-          1. WHat changes to make to the Quadrupeds Locomotion configs?
-          2. Copy the configs from unitree_rl_lab and train a similar checkpoint in genesis(Quadrupeds_locomtion) - decided upon(to change?) - TBD @OM
-     
+    1. _Can we use unitree_rl_lab with mujoco. -> @Om [5-02-2026] --> Possible_
+       - _Setup on Summer --> @Om_
+    3. Directly deploy to IRL possible? -> @Om and @Chirag [07-02-2026] - (Not possible directly for Quadrupeds_locomotion)
+    4. If there are issues such as network key mismatch:[post the above results] --> _This is transferrable since both the repositories are using the same learning library._
+      - _Given that the checkpoints "look" transferrable, need to try the following: @Om_
+       a. _Compare the checkpoint state dicts - should not be that different because rsl_rl._
+
 - []: What component from the robust deployment paper needs to be incorporated - https://leggedrobotics.github.io/rl-perceptiveloco/  --> @asavari
      1. You will have to talk to Chirag here to see what is the contribution of the above paper(Parallelized Training). Basically the idea is that the first paper
         lacks sim2real deployment, the second one is good in that aspect - so the current implementation given, is that what we need? n
