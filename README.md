@@ -9,7 +9,7 @@ A repo aimed at inducing a happy marriage between massively Parallelized RL trai
 - []: _We have the trained checkpoint from the Quadrupeds locomotion repo, can we deploy?_
 - []: _A few things to keep in mind before deploying:_
      _a. Make sure there are proper constraints on the values the policy can output -> Clip the values action values to be within a range._
-  
+  []: Compatibality check bw quadruped locomotion and unitree rl lab: check observation space and actor critic network structure.
 ## TODO:
 Answer the following Questions first:
 - [x]: What is it that the first work is lacking - https://arxiv.org/abs/2109.11978  -->@chirag 
