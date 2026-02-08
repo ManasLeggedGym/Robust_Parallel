@@ -6,7 +6,7 @@ A repo aimed at inducing a happy marriage between massively Parallelized RL trai
 - []: _Check if the performance boost would be significant?_ ->Immediate TODO can be done now that we have mujoco running?
 - []: _Setup MUjoco Training on Summer - First Check if the implementation is correct and the robot will actually learn._
 - []: _Check the deploy.yaml file created post training - with the mujoco setup, it isn't being created right now._
-- 
+
 ## Sim2Real deployment: @Asavari,@Chirag
 - []: We have the trained checkpoint from the Quadrupeds locomotion repo, can we deploy?
 - []: A few things to keep in mind before deploying:
