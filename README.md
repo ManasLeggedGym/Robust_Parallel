@@ -2,10 +2,11 @@
 A repo aimed at inducing a happy marriage between massively Parallelized RL training and robust sim2real deployment 
 
 ## Immediate TODOs: @Om @Mrigaank
-- [x]: Have these two been merged before? i.e. has someone done parallelized training and then use a belief encoder model for RL? -> Mostly No
+- [x]: Have these two been merged before? i.e. has someone done parallelized training and then use a belief encoder model for RL? -> Mostly No.
 - []: _Check if the performance boost would be significant?_ ->Immediate TODO can be done now that we have mujoco running?
-- []: _Setup MUjoco Training on Summer - First Check if the implementation is correct and the robot will actually learn._
-- []: _Check the deploy.yaml file created post training - with the mujoco setup, it isn't being created right now._
+- [x]: _Setup MUjoco Training on Summer - First Check if the implementation is correct and the robot will actually learn. -> Vel Tracking RL Training has been setup.
+- []: _Setup Parallelized MUjoco Training on Summer - Integrate legged_gym with unitree_rl_mjlab. 
+- [x]: _Check the deploy.yaml file created post training - with the mujoco setup, it isn't being created right now. -> Deploy.yaml file is being created with the unitree_rl_mjlab script.
 
 ## Sim2Real deployment: @Asavari,@Chirag
 - []: We have the trained checkpoint from the Quadrupeds locomotion repo, can we deploy?
@@ -41,5 +42,5 @@ Answer the following Questions first:
 
 - [x]: Clone the legged_gym(Parallel Training) codebases as submodules.
     1. https://github.com/leggedrobotics/legged_gym.git  has been added
-    2. #TODO - Can we use the one that depends on IsaacLab or Mujoco instead because IsaacGym is no longer supported? Will switching break things mentioned in the paper? @mrigaank
+    2. #TODO - Can we use the one that depends on IsaacLab or Mujoco instead because IsaacGym is no longer supported? Will switching break things mentioned in the paper? @mrigaank -> done
 
