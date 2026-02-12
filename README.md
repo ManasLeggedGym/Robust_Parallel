@@ -16,9 +16,9 @@ A repo aimed at inducing a happy marriage between massively Parallelized RL trai
 
 ## Implementation of perceptiveloco: @Asavari @Chirag
 - []: Modify unitree_rl_mjlab training script with the actor-critic architecture and belief encoder.
-     a. Implement teacher policy from https://github.com/awesomericky/quadruped-robot-belief-encoder --@Asavari and @Chirag
-     b. Incorporate student network, height sampling, and domain randomization @Asavari
-     c. Edit the observation space with respect to https://leggedrobotics.github.io/rl-perceptiveloco/ --@Chirag
+     - [] a. Implement teacher policy from https://github.com/awesomericky/quadruped-robot-belief-encoder --@Asavari and @Chirag
+     - [] b. Incorporate student network, height sampling, and domain randomization @Asavari
+     - [] c. Edit the observation space with respect to https://leggedrobotics.github.io/rl-perceptiveloco/ --@Chirag
 
 
 ## TODO:
