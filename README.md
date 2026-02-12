@@ -9,10 +9,10 @@ A repo aimed at inducing a happy marriage between massively Parallelized RL trai
 - [x]: _Check the deploy.yaml file created post training - with the mujoco setup, it isn't being created right now. -> Deploy.yaml file is being created with the unitree_rl_mjlab script.
 
 ## Sim2Real deployment: @Asavari,@Chirag
-- []: We have the trained checkpoint from the Quadrupeds locomotion repo, can we deploy?
+- [x]: We have the trained checkpoint from the Quadrupeds locomotion repo, can we deploy? --> Using unitree rl mjlab for training and deployment.
 - []: A few things to keep in mind before deploying:
      a. Make sure there are proper constraints on the values the policy can output -> Clip the values action values to be within a range.
-- []: _Compatibality check bw quadruped locomotion and unitree rl lab: check observation space and actor critic network structure._
+- [x]: _Compatibality check bw quadruped locomotion and unitree rl lab: check observation space and actor critic network structure._ --> irrelevant
 
 
 ## TODO:
