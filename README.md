@@ -10,7 +10,7 @@ A repo aimed at inducing a happy marriage between massively Parallelized RL trai
      - [] Imp - Whatever we are training/implementing - have bash scripts for them to make reproduciblity easier.
      - [] a. Implement teacher policy from https://github.com/awesomericky/quadruped-robot-belief-encoder --@Asavari and @Chirag - Decuple check :[17-02-2026]
      - [] b. Incorporate student network, height sampling, and domain randomization @Asavari - Check(DECUPLE) [17-02-2026]
-     - [] Create a fork of unitree_mjlab and link the origin with the setup on summer. [17-02-2026]
+     - [] Create a fork of unitree_mjlab and link the origin with the setup on summer. [17-02-2026] IMP - .gitignore must manage checkpoints properly.
      - [] c. Edit the observation space with respect to https://leggedrobotics.github.io/rl-perceptiveloco/ --@Chirag - partially done
      - [] d. Check the training scripts that are already present - do we need to code something additional?
      - [] e. What does the training setup look like? - IRL and SIM?
