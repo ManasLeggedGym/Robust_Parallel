@@ -2,8 +2,8 @@
 A repo aimed at inducing a happy marriage between massively Parallelized RL training and robust sim2real deployment 
 
 ## Immediate TODOs: @Om @Mrigaank
-- []: _Check if the performance boost would be significant?_ ->Immediate TODO can be done now that we have mujoco running?
-- []: _Setup Parallelized MUjoco Training on Summer - Integrate legged_gym with unitree_rl_mjlab. -> Deadline: [16-02-2026]
+- []: _Check if the performance boost would be significant?_ ->Immediate TODO can be done now that we have mujoco running? - NEED PARALLEL TO START 
+- []: _Setup Parallelized MUjoco Training on Summer - Integrate legged_gym with unitree_rl_mjlab. -> Deadline: [16-02-2026] DID NOT MEET ENTIRELY - TESTING REMAINING
 
 ## Implementation of perceptiveloco: @Asavari @Chirag
 - []: Modify unitree_rl_mjlab training script with the actor-critic architecture and belief encoder.
