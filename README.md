@@ -18,3 +18,6 @@ A repo aimed at inducing a happy marriage between massively Parallelized RL trai
 - []: RQ - Once the component has been found out, we need to think of an actual implementation of the idea in code and integration with first one @tbd
 
 
+## How the current setup fits in with the changes we are trying to make:
+
+The mjlab training algo handles every aspect via different managers, currently it is using 
